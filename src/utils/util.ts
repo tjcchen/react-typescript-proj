@@ -1,5 +1,9 @@
-export const log = (...msgs: any[]) => {
+const log = (...msgs: any[]) => {
   console.log(msgs);
 };
 
-export default null;
+const exportedObject = {
+  log
+};
+
+export default exportedObject;

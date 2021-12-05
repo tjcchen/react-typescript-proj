@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { log } from '../utils/util';
+import util from '../utils/util';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    log('Hello react + ts!', 1);
+    util.log('Hello react + ts!', 1);
     document.title = `You clicked ${count} times`;
   });
 
